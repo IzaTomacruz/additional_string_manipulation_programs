@@ -1,8 +1,12 @@
-# Prog07. center() add space characters at the beginning and at the end of the string to print the string at the center. 
-# Create a program that do the same functionality without using center() function.
-
 # Ask to enter a text to center
+text = input("Enter a text: ")
 
 # Center the text without using center
+total_space = max(0, 40 - len(text))
+left_space = total_space // 2
+right_space = total_space - left_space
+
+text_centered = " " * left_space + text + " " * right_space
 
 # Print the result
+print("Result: |" + text_centered + "|")
