@@ -1,8 +1,8 @@
-# Prog03. lower() converts all characters of the string into lower case. 
-# Create a program that do the same functionality without using lower() function
-
 # Ask to enter any text
+text = input("Enter a text: ")
 
 # Convert all characters to lowercase without using lower
+translate_lower = str.maketrans("ABCDEFGHIJKLMNOPQRSTUVWXYZ", "abcdefghijklmnopqrstuvwxyz")
 
 # Print the result
+print("Result:", text.translate(translate_lower))
