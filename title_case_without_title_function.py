@@ -1,8 +1,14 @@
-# Prog10. title() makes all first letter of each word in the string, capital letter. And all other letter in small case. 
-# Create a program that do the same functionality without using title() function.
-
 # Ask to enter a text
+text = input("Enter a text: ")
 
 # Convert first character in each word to uppercase without using title() function
+words = text.split()
+
+for i in range(len(words)):
+    if words[i] and words[i][0].islower():  
+        words[i] = words[i][0].upper() + words[i][1:].lower()
+
+title_case_text = " ".join(words)
 
 # Print the result
+print("Result:", title_case_text)
