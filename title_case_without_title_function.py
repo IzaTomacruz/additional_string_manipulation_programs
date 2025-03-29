@@ -5,8 +5,7 @@ text = input("Enter a text: ")
 words = text.split()
 
 for i in range(len(words)):
-    if words[i] and words[i][0].islower():  
-        words[i] = words[i][0].upper() + words[i][1:].lower()
+    words[i] = words[i][0].upper() + words[i][1:].lower()    
 
 title_case_text = " ".join(words)
 
