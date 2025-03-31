@@ -1,11 +1,10 @@
-# Prog07. zfill() add zero characters at the beginning of the string to complete the number of characters specifies in function parameter. 
-# Create a program that do the same functionality without using zfill() function.
-
 # Ask to enter a digit 
+number = input("Enter a number: ")
 
-# Check if it has six digit
-
-# Add zeros at the beginning until it reaches six digit
+# Check if it has six digits and add zeros until it reaches six digits
+while len(number) < 6:
+    number = '0' + number
 
 # Print the result  
+print(f"Result: {number}")
 
